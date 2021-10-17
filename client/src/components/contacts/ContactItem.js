@@ -26,6 +26,11 @@ const ContactItem = ({ contact }) => {
         {email && (<li>
           <i className="fas fa-envelope-open"></i> {email}
         </li>)}
+        {phone && (
+          <li>
+            <i className='fas fa-phone' /> {phone}
+          </li>
+        )}
       </ul>
       <p>
         <button className="btn btn-dark btn-sm" onClick={() =>setCurrent(contact)}>Edit</button>
